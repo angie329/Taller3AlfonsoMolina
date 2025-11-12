@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale:1.0">
+    <title>Taller - JS</title>
+    <meta name="keywords" content="javascript, practica">
+    <meta name="author" content="Angie Alfonso">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Taller práctico de JavaScript</h1>
+        </header>
+        <fieldset>
+        <section id="calculadora">
+            <h2>Sección 1: Calculadora</h2>
+            <div class="calcu">
+                <label>Ingrese valor A:<input type="number" id="numA"></label>
+                <label>Ingrese valor B:<input type="number" id="numA"></label>
+
+                <div class="buttons">
+                    <button data-op="sum">Sumar</button>
+                    <button data-op="res">Restar</button>
+                    <button data-op="mul">Multiplicar</button>
+                    <button data-op="div">Dividir</button>
+                </div>
+
+                <div id="resul" class="resultado"></div>
+                <div id="err" class="error"></div>
+            </div>
+        </section>
+        </fieldset>
+        <fieldset>
+        <section id="registro">
+            <h2>Sección 2: Formulario de registro </h2>
+
+            <form id="registro">
+                <label>Nombre:
+                    <input id="nombre" type="text" minlength="3" required>
+                </label>
+                <label>Correo:
+                    <input id="email" type="email" required>
+                </label>
+                <label>Contraseña:
+                    <input id="password" type="password" minlength="6" required>
+                </label>
+                <label>Fecha de nacimiento:
+                    <input id="nac" type="date" required>
+                </label>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        </fieldset>
+        <fieldset>
+        <section id="fechas">
+            <h2>Sección 3:  Cálculo de diferencia de fechas</h2>
+                <label>Fecha inicio:
+                    <input id="fecha1" type="date">
+                </label>
+                <label>Fecha fin:
+                    <input id="fecha2" type="date">
+                </label>
+
+                <button id="diferencia">Calcular la diferencia</button>
+                <div id="resul" class="resultado"></div>
+                <div id="err" class="error"></div>
+        </section>
+        </fieldset>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
